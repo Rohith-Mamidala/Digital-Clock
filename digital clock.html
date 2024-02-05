@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Digital Clock</title>
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <style> 
+        body{
+            background-repeat: no-repeat;background-size: 100%;background-attachment: fixed;
+        }
+       #outdiv{
+        
+        width: 510px;height: 400px;
+            position: relative;top: 100px;border-radius: 10px;
+         
+       }
+       #title{
+        color: red;height: 45px;position: inherit;top: -10px; border-radius: 15px;width: 460px;background-color: rgb(0, 0, 0);
+        word-spacing:10px;letter-spacing: 3px;font-family: 'Courier New', Courier, monospace;
+       }
+
+        #maindiv{
+            width: 500px;height: 300px;
+            border: 5px solid black;
+            position: inherit;bottom: 20px;background-color:white;
+            border-radius: 50px;box-shadow: 10px 15px 10px black;background-repeat: no-repeat;background-size:500px 300px;
+        }
+        #weekdiv{
+            width: 450px;height:90px;
+            border: 2px solid black;position: inherit;top: 20px;
+            border-radius: 10px;box-shadow: -5px -2px 5px black;box-shadow: 1px 5px 10px rgba(31, 30, 30, 0.085);background-color: rgba(0, 0, 0, 0.573);
+        }
+        #week{
+            text-align: center;text-shadow:3px 2px 4px black;font-weight: 800;
+        }
+        #timediv{
+            border-radius: 10px;background-color: rgba(53, 106, 10, 0.605);
+            width: 250px;height: 80px; border: 2px solid black;position: inherit;top: 80px;right:70px;box-shadow: 1px 5px 10px black;
+            background-repeat: no-repeat;background-size: 250px  80px;
+
+        }
+        #time{
+            position: inherit;top:25px;
+            text-align: center;font-size: 30px;display: inline;
+        }
+        #caldiv{
+            border-radius: 10px;background-color:rgba(255, 231, 231, 0.385);
+            width:100px; height:110px; border: 2px solid black;position: inherit;left: 150px;box-shadow: 1px 5px 10px black;top: -20px;
+        }
+       
+        #format{
+            display: inline;
+            
+        }
+        #date{
+            position: inherit;bottom: 30px;font-size: 23px;font-weight: 800;
+        }
+        #mon{
+            top: 10px;position: relative;
+        }
+        #month{
+            height: 55px;position: relative; bottom: 22px;
+            background-color: rgba(194, 219, 49, 0.621);background-size: 100% 55px;border-radius: 10px 10px 0px 0px;
+        }
+        
+    </style>
+</head>
+<body onload="clock()" id="body">
+<center>
+    <div id="outdiv">
+        <h1 id="title"><marquee behavior="alternate">Digital Clock</marquee></h1>
+    <div id="maindiv" >
+    <div id="weekdiv">
+        <h1 id="week"></h1>
+
+    </div>
+
+    <div id="timediv">
+        
+        <h2 id="time"></h2>
+        <h3 id="format"></h3>
+        </div>
+            
+    <div id="caldiv">
+        <div id="month">
+        <h1 id="mon"></h1></div>
+        <h3 id="date"></h3>
+
+    </div>
+</div>
+
+</center>
+<script>
+    function clock(){
+   
+        var day=new Date()
+        var mon=day.getMonth()
+        var daay=day.getDay()
+        var hh=day.getHours()
+        var min=day.getMinutes()
+        var sec=day.getSeconds()
+        var date=day.getDate()
+        if(date<10){
+            date='0'+date
+        }
+        document.getElementById('date').innerHTML=date 
+        document.getElementById('mon').innerHTML=mon
+            
+        var session='AM';
+        if(hh==0)
+        {
+            hh=12
+        }
+        else if(hh>12)
+        {
+            hh=hh-12
+            session='PM'
+            
+        }
+        if(hh<10 )
+        {
+            hh='0'+hh;
+        }
+        if(min<10){
+            min='0'+min;
+        }
+        if(sec<10)
+        {
+            sec='0'+sec;
+        }
+        document.getElementById('maindiv').style.backgroundImage='url(../images/pxfuel.jpg)'  
+
+    switch(daay){
+            case 0:document.getElementById('week').innerHTML='SUNDAY'
+            document.getElementById('week').style.color='orange'   
+            
+            document.getElementById('body').style.backgroundImage='url(../images/bruno-aguirre-YRfaG3JVwkU-unsplash.jpg)'  
+
+            break
+            case 1:document.getElementById('week').innerHTML='MONDAY'
+            document.getElementById('week').style.color='green';
+            document.getElementById('body').style.backgroundImage='url(../images/fantasy-2049567.jpg)'
+            break;
+              case 2:document.getElementById('week').innerHTML='TUESDAY'
+              document.getElementById('week').style.color='royalblue';
+            document.getElementById('body').style.backgroundImage='url(../golden-hour-pathway-during-fall-3ct53rw1r94b6s38.jpg)'
+
+            break
+              case 3:document.getElementById('week').innerHTML='WEDSDAY'
+              document.getElementById('week').style.color='yellowgreen';
+            document.getElementById('body').style.backgroundImage='url(../images/wallpaperflare.com_wallpaper.jpg)'
+
+            break
+              case 4:document.getElementById('week').innerHTML='THUERSDAY'
+              document.getElementById('week').style.color='orangered';
+            document.getElementById('body').style.backgroundImage='url(../4k-autumn.jpg)'
+
+            break
+              case 5:document.getElementById('week').innerHTML='FRIDAY'
+              document.getElementById('week').style.color='hotpink';
+            document.getElementById('body').style.backgroundImage='url(../Avengers/avengers.jpg)'
+
+            break
+              case 6:document.getElementById('week').innerHTML='SATARDAY'
+              document.getElementById('week').style.color='violet';
+            document.getElementById('body').style.backgroundImage='url(../images/pexels-maxime-francis-2246476.jpg)'
+
+            break
+        }
+        switch(mon){
+            case 0:document.getElementById('mon').innerHTML='JAN'
+            break;
+            case 1:document.getElementById('mon').innerHTML='FEB'
+            break;
+            case 2:document.getElementById('mon').innerHTML='MAR'
+            break;
+            case 3:document.getElementById('mon').innerHTML='APR'
+            break;
+            case 4:document.getElementById('mon').innerHTML='MAY'
+            break;
+            case 5:document.getElementById('mon').innerHTML='JUN'
+            break;
+            case 6:document.getElementById('mon').innerHTML='JULY'
+            break;
+            case 7:document.getElementById('mon').innerHTML='AUG'
+            break;
+            case 8:document.getElementById('mon').innerHTML='SEP'
+            break;
+            case 9:document.getElementById('mon').innerHTML='OCT'
+            break;
+            case 10:document.getElementById('mon').innerHTML='NOV'
+            break;
+            case 11:document.getElementById('mon').innerHTML='DEC'
+            break;
+           
+        }
+        
+        
+      
+        document.getElementById('time').innerHTML=hh +' : '+ min +' : '+ sec;
+        document.getElementById('format').innerHTML=session;
+        document.getElementById('format').style.color='white'
+        setTimeout('clock()',1000)
+
+    }
+    clock()
+</script>
+</body>
+</html>
